@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <meta name="description" content="3D / 2D Game Artist Portfolio" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Chen I Ting®</a>
+      <div class="nav-links"><a href="#work">WORK</a>
+       <!-- <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>-->
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+    <div class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> VISUAL STORYTELLING</div>
+        <h1>陳壹婷<br>個人作品集</h1>
+        <p>橫跨 3D／2D 遊戲美術與平面視覺設計領域，持續探索不同形式的視覺表現。這裡收錄了過往的精選專案、設計作品與個人創作，呈現不同領域的視覺探索與實務經驗。</p>
+        <div class="cta"> <a class="btn primary" href="#about">關於我 ↓</a><a class="btn primary" href="#work">查看作品 ↓</a>
+</div>
+        
+      </div>
+
+      <!-- =========================================================
+           圖片替換區 A：首頁主視覺
+           把 src="images/hero.jpg" 改成你的圖片檔名即可。
+           建議尺寸：直式 1600 x 2000 px 左右。
+           例如：src="images/my-character.jpg"
+           ========================================================= -->
+      <div class="hero-art">
+        <div class="image-fallback">首頁主視覺<br>images/hero.jpg</div>
+        <img src="images/image_00.jpg" alt="首頁主視覺" onerror="this.style.display='none'">
+        <div class="tag">FEATURED ARTWORK </div>
+      </div>
+      <!-- ================= 圖片替換區 A 結束 ================= -->
+    </div>
+<section id="about">
+      <div class="section-head"><h2 class="section-title">About</h2></div>
+      <div class="about-grid">
+        <!-- =========================================================
+             圖片替換區 C：About 個人照片 / 角色圖
+             修改 src="images/about.jpg"
+             建議直式圖片。
+             ========================================================= -->
+        <div class="portrait"><div class="image-fallback">ABOUT 圖片<br>images/about.jpg</div><img src="images/image_01_1.jpg" alt="About 個人照片或角色圖，" onerror="this.style.display='none'"></div>
+        <!-- ================= 圖片替換區 C 結束 ================= -->
+        <div><p class="about-copy">具備遊戲美術經驗與創作熱忱，重視溝通合作，持續探索跨領域設計的更多可能。</p>
+          <p class="about-small">我是陳壹婷。大學時就讀數位媒體設計系，有遊戲企劃、遊戲美術與UI設計經驗，畢業後進入3D美術產業，從事建模與、材質貼圖製作，隨後進入遊戲代理商，從事2D遊戲美術設計，製作遊戲行銷banner以及網頁蓋台設計。我喜歡設計，配合該主題風格畫面，做出具有辨識度的視覺。</p>
+       <div class="work-history">
+           <p>工作經歷：2020/10–2023/08　3D 美術設計師</p>
+           <p>工作經歷：2024/02–2025/03　2D 遊戲美術</p>
+           <p>工作經歷：2025~　 平面美術設計</p>
+        </div>
+
+          <div class="skills"><span class="skill">Maya / 3dmax</span><span class="skill">ZBrush</span><span class="skill">Substance 3D Painter</span><span class="skill">Photoshop</span><span class="skill">Illustrator</span><span class="skill">Game UI</span></div></div>
+      </div>
+    </section>
+
+<section id="work">
+      <div class="section-head">
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-desc">運用指定角色元素，設計出包含符合該視覺的主標題、按鈕、背景等整體視覺</p>
+      </div>
+
+      <!-- ===== 作品分類：All / Banner / 網頁 / 平面UI / 3D ===== -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Selected</button>
+        <button class="filter-btn" data-filter="banner">BANNER</button>
+        <button class="filter-btn" data-filter="web">網頁</button>
+        <button class="filter-btn" data-filter="ui">平面與UI</button>
+       <!--  <button class="filter-btn" data-filter="3d">3D</button> -->
+      </div>
+
+      <p class="work-filter-note" id="workFilterNote">目前顯示：每個分類前 2 件精選作品</p> 
+
+      <!--
+        每個作品預設最多 4 張圖；需要 6 張的作品加 data-max-images="6"。
+        data-featured="true"  = 會出現在 ALL
+        data-featured="false" = 只在對應分類顯示
+
+        data-images       = 圖片路徑，用逗號 , 分隔（預設最多 4 張；可用 data-max-images="6" 指定 6 張）
+        data-titles       = 每張圖片的標題，用 | 分隔
+        data-descriptions = 每張圖片的說明，用 | 分隔
+        data-project-name = 這件作品的專案名稱
+        data-year         = 這件作品的年份
+      -->
+      <div class="grid" id="workGrid">
+        <!-- Banner 01｜All 精選 -->
+        <article class="card project-card" data-category="banner" data-featured="true"
+          data-images="
+          images/image_CLS_3.jpg,
+          images/image_CLS_2.jpg,
+          images/image_CLS_1.jpg,
+          images/image_CLS_6.jpg"
+          
+          data-titles="
+          【Banner｜遊戲活動視覺圖】|
+          【Banner｜網站活動版頭】|
+          【Banner｜遊戲活動視覺圖】|
+          【Banner｜網站內呈現示意圖】"
+          
+          data-descriptions="
+          運用指定素材，自行規劃視覺以及標題的設計，提供給官網以及行銷廣告等多方運用。|
+          運用指定素材，自行規劃視覺以及標題的設計，此範例呈現為網站版頭的尺寸。|
+          運用指定素材，自行規劃視覺以及標題的設計。|
+          此圖純為示意圖，呈現出該圖素的運用範圍"
+          
+          data-project-name="Close 封印者"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">Banner 01 封面<br>BN09_1080x1080.jpg</div>
+            <img src="images/image_CLS_3.jpg" alt="Banner 作品 01 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>遊戲Banner 作品</h3><div class="meta">BANNER ·二次元風 ·Close 封印者</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- Banner 02｜All 精選 -->
+        <article class="card project-card" data-category="banner" data-featured="true"
+          data-images="
+          images/image_AVA_01.jpg,
+          images/image_AVA_02.jpg,
+          images/image_WK_01.jpg,"
+
+          
+          data-titles="
+          【Banner 戰地之王｜遊戲活動視覺圖】|
+          【Banner 戰地之王｜活動告示】|
+          【Banner Wonder king｜事前預約主視覺】|"
+
+          
+          data-descriptions="
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計。|
+          依照企劃需求的活動告示設計。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計。|
+"
+          
+          data-project-name="AVA戰地之王"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">Banner 02 封面<br>banner-02-cover.jpg</div>
+            <img src="images/image_AVA_01.jpg" alt="Banner 作品 02 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>遊戲Banner 作品</h3><div class="meta">BANNER ·可愛風·戰地之王/Wonder king</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- Banner 03｜分類內更多作品 -->
+        <article class="card project-card" data-category="banner" data-featured="false" data-max-images="6"
+          data-images="
+          images/image_LG_01.jpg,
+          images/image_LG_03.png,
+          images/image_LG_02.jpg,
+          images/image_LG_04.jpg,
+          images/image_LG_05.jpg,
+          images/image_LG_06.jpg"
+          
+          data-titles="
+          【Banner 新王者之劍｜遊戲活動視覺圖】|
+          【Banner 新王者之劍｜標題設計展示】|
+          【Banner 新王者之劍｜遊戲內活動圖】|
+          【Banner 失落的方舟｜遊戲活動廣告宣傳圖】|
+          【Banner 失落的方舟｜遊戲宣傳圖】|
+          【Banner 失落的方舟｜遊戲活動宣傳圖】"
+          
+          data-descriptions="
+          運用指定素材，結合AI的技術讓素材角色變化還有生成適合場景，再以活動標題為主，設計出符合該風格的視覺設計。|
+          前一張banner的標題設計。|
+          運用指定素材，結合AI的技術讓素材角色變化還有生成適合場景，再以活動標題為主，設計出符合該風格的視覺設計。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計，提供給官網以及行銷廣告等多方運用。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計，提供給官網以及行銷廣告等多方運用。"
+          
+          data-project-name="新王者之劍/失落方舟"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">Banner 03 封面<br>banner-03-cover.jpg</div>
+            <img src="images/image_LG_01.jpg" alt="Banner 作品 03 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>遊戲Banner 作品</h3><div class="meta">BANNER ·寫實風·新王者之劍/失落的方舟</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- Banner 04｜分類內更多作品 -->
+        <article class="card project-card" data-category="banner" data-featured="false"
+          data-images="
+          images/image_AVA_03.jpg,
+          images/image_AVA_04.jpg,
+          images/image_BUM_01.jpg,
+          "
+
+          data-titles="
+          【Banner 戰地之王｜遊戲活動宣傳圖】|
+          【Banner 戰地之王｜遊戲活動宣傳圖】|
+          【Banner 輸贏｜遊戲事前宣傳圖】|
+          "
+         
+          data-descriptions="
+          運用極少的素材以及結合AI生成圖素，搭配設計出活動宣傳圖，提供給官網以及行銷廣告等多方運用。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計。|
+          運用指定素材，以活動標題為主，設計出符合該風格的視覺設計。|
+          "
+
+          data-project-name="戰地之王/輸贏"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">Banner 04 封面<br>banner-04-cover.jpg</div>
+            <img src="images/image_AVA_03.jpg" alt="Banner 作品 04 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>遊戲Banner 作品 04</h3><div class="meta">BANNER ·寫實風·戰地之王/輸贏</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 網頁 01｜All 精選 -->
+        <article class="card project-card" data-category="web" data-featured="true"data-max-images="6"
+          data-images="
+          images/image_WK_index_01.jpg,
+          images/image_WK_index_00.jpg,
+          images/image_WK_index_02.jpg,
+          images/image_WK_index_03.jpg,
+          images/image_WK_index_04.jpg,
+          images/image_WK_index_05.jpg,"
+          
+
+          data-titles="
+          【網頁 冒險王瘋世界｜事前預約頁面設計】|
+          【網頁 冒險王瘋世界｜事前預約頁面設計】|
+          【網頁 冒險王瘋世界｜事前預約頁面設計】|
+          【網頁 冒險王瘋世界｜事前預約頁面設計】|
+          【網頁 冒險王瘋世界｜事前預約頁面設計】|
+          【網頁 冒險王瘋世界｜事前預約頁面設計】"
+
+          data-descriptions="
+            為冒險王瘋世界這款PC遊戲，配合營運企劃所規劃的內容需求，從0開始設計事前預約的頁面，設計完成後交由網頁工程師做切板與套版製作，這張圖為整體預覽畫面。*此遊戲已關閉*|
+            為冒險王瘋世界事前預約的頁面，區塊展示-主畫面以及側選單。*此遊戲已關閉*|
+            為冒險王瘋世界事前預約的頁面，區塊展示-預約獎勵區。*此遊戲已關閉*|
+            為冒險王瘋世界事前預約的頁面，區塊展示-角色介紹。*此遊戲已關閉*|
+            為冒險王瘋世界事前預約的頁面，區塊展示-遊戲特色。*此遊戲已關閉*|
+            為冒險王瘋世界事前預約的頁面，區塊展示-彈窗展示。*此遊戲已關閉*|"
+
+          data-project-name="冒險王瘋世界｜事前預約頁面設計"
+          data-year="2026">
+          <div class="thumb">
+            <div class="image-fallback">網頁 01 封面<br>web-01-cover.jpg</div>
+            <img src="images/image_WK_index_00.jpg" alt="網頁 作品 01 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>冒險王瘋世界｜事前預約頁面設計</h3><div class="meta">WEB · 事前預約頁面</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 網頁 02｜All 精選 -->
+        <article class="card project-card" data-category="web" data-featured="true"
+          data-images="
+          images/image_LK_index_02.jpg,
+          images/image_LK_index_03.jpg,
+          images/image_LK_index_01.jpg,"
+          
+          data-titles="
+          【失落方舟｜主題活動彈窗設計】|
+          【失落方舟｜主題活動彈窗設計】|
+          【失落方舟｜主題活動彈窗設計】|"
+
+          data-descriptions="
+          為遊戲活動的官網彈窗設計，有既定的版面配置，在有限的空間內替換圖素與配置獎勵區塊。依照活動性質，設計出適合的主標題字還有搭配的背景畫面。|
+          為遊戲活動的官網彈窗設計，完整示意圖。|
+          為遊戲活動的官網彈窗設計，有既定的版面配置，在有限的空間內替換圖素與配置獎勵區塊。依照活動性質，設計出適合的主標題字還有搭配的背景畫面。|】"
+
+          data-project-name="失落方舟｜主題活動彈窗設計"
+          data-year="2026">
+          <div class="thumb">
+            <div class="image-fallback">網頁 02 封面<br>web-02-cover.jpg</div>
+            <img src="images/image_LK_index_02.jpg" alt="網頁 作品 02 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>失落方舟｜主題活動彈窗設計</h3><div class="meta">WEB · Activity Page</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 網頁 03｜分類內更多作品 
+        <article class="card project-card" data-category="web" data-featured="false"
+          data-images="
+          images/web-03-01.jpg,
+          images/web-03-02.jpg,
+          images/web-03-03.jpg,
+          images/web-03-04.jpg"
+
+          data-titles="
+          【網頁03｜圖片01標題】|
+          【網頁03｜圖片02標題】|
+          【網頁03｜圖片03標題】|
+          【網頁03｜圖片04標題】"
+
+          data-descriptions="
+          【網頁03｜圖片01說明：請替換這段文字】|
+          【網頁03｜圖片02說明：請替換這段文字】|
+          【網頁03｜圖片03說明：請替換這段文字】|
+          【網頁03｜圖片04說明：請替換這段文字】"
+
+          data-project-name="【網頁03｜專案名稱】"
+          data-year="【2026】">
+          <div class="thumb">
+            <div class="image-fallback">網頁 03 封面<br>web-03-cover.jpg</div>
+            <img src="images/web-03-cover.jpg" alt="網頁 作品 03 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>網頁 作品 03</h3><div class="meta">WEB · LANDING PAGE</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+-->
+
+        <!-- 網頁 04｜分類內更多作品 
+        <article class="card project-card" data-category="web" data-featured="false"
+          data-images="images/web-04-01.jpg,images/web-04-02.jpg,images/web-04-03.jpg,images/web-04-04.jpg"
+          data-titles="【網頁04｜圖片01標題】|【網頁04｜圖片02標題】|【網頁04｜圖片03標題】|【網頁04｜圖片04標題】"
+          data-descriptions="【網頁04｜圖片01說明：請替換這段文字】|【網頁04｜圖片02說明：請替換這段文字】|【網頁04｜圖片03說明：請替換這段文字】|【網頁04｜圖片04說明：請替換這段文字】"
+          data-project-name="【網頁04｜專案名稱】"
+          data-year="【2026】">
+          <div class="thumb">
+            <div class="image-fallback">網頁 04 封面<br>web-04-cover.jpg</div>
+            <img src="images/web-04-cover.jpg" alt="網頁 作品 04 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>網頁 作品 04</h3><div class="meta">WEB · LANDING PAGE</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>-->
+
+        <!-- 平面UI 01｜All 精選 -->
+        <article class="card project-card" data-category="ui" data-featured="true"data-max-images="6"
+          data-images="
+          images/image_HT_01.jpg,
+          images/image_HT_02.png,
+          images/image_HT_03.png,
+          images/image_HT_04.jpg,
+          images/image_HT_05.jpg"
+
+          data-titles="
+          【平面作品｜快樂玩活動設計】|
+          【平面作品｜快樂玩活動設計】|
+          【平面作品｜快樂玩活動設計】|
+          【平面作品｜快樂玩活動設計】|
+          【平面作品｜快樂玩活動設計】"
+          
+          data-descriptions="
+          依照企劃指定版型與內容，再以活動標題為主，設計出符合該風格的視覺設計。|
+          依照企劃指定版型與內容，再以活動標題為主，設計出符合該風格的視覺設計。|
+          依照企劃指定版型與內容，再以活動標題為主，設計出符合該風格的視覺設計。|
+          依照企劃指定版型與內容，再以活動標題為主，設計出符合該風格的視覺設計。|
+          依照企劃指定版型與活動物件，再以活動標題為主，設計出符合該風格的視覺設計。"
+
+          data-project-name="快樂玩平台活動設計"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">平面UI 01 封面<br>ui-01-cover.jpg</div>
+            <img src="images/image_HT_02.png" alt="平面UI 作品 01 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>平面作品</h3><div class="meta">GRAPHIC · 快樂玩平台活動 </div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 平面UI 02｜All 精選 -->
+        <article class="card project-card" data-category="ui" data-featured="true"
+          data-images="
+          images/image_G_01.jpg,
+          images/image_G_02.jpg,
+          images/image_G_03.jpg,
+          images/image_G_04.jpg"
+
+          data-titles="
+          【平面作品｜大學實習APP_AUTOAR的海報設計】|
+          【平面作品｜新年平面設計】|
+          【平面作品｜卡厄思咖啡廳活動設計】|
+          【平面作品｜卡厄思咖啡廳活動輸出物】"
+
+          data-descriptions="
+          大學時期為實習公司的AI APP所做的海報設計。|
+          個人為了新年做的簡單生肖小卡設計。|
+          卡厄思夢境手機遊戲的線下咖啡廳活動，所做的宣傳設計。|
+          卡厄思夢境手機遊戲的線下咖啡廳活動，所做的大圖輸出物*此圖為官方場景實際拍攝圖*。"
+
+          data-project-name="AUTOAR/個人作品/卡厄思夢境輸出物"
+          data-year="2021/2025/2026">
+          <div class="thumb">
+            <div class="image-fallback">平面UI 02 封面<br>ui-02-cover.jpg</div>
+            <img src="images/image_G_01.jpg" alt="平面UI 作品 02 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>平面與輸出</h3><div class="meta">GRAPHIC · 大學時做品 /卡厄思夢境</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 平面UI 03｜分類內更多作品 -->
+        <article class="card project-card" data-category="ui" data-featured="false"
+          data-images="
+          images/image_UI_03.png,
+          images/image_UI_02.png,
+          images/image_UI_03.jpg,
+          images/image_UI_04.png"
+
+          data-titles="
+          【UI作品｜封印者週年活動之特殊UI設計】|
+          【賽事Logo｜戰地之王活動Logo】|
+          【Logo設計｜KOODS 品牌Logo設計】|
+          【Logo設計｜KOODS 品牌Logo草圖】"
+
+          data-descriptions="
+          為了遊戲週年活動所做的指定特殊UI設計。|
+          活動賽事所設計之賽事LOGO。|
+          KOODS 品牌Logo設計，模擬LOGO使用的情境圖。|
+          KOODS 品牌Logo設計的過程。"
+
+          data-project-name="UI/LOGO設計"
+          data-year="2025-2026">
+          <div class="thumb">
+            <div class="image-fallback">平面UI 03 封面<br>ui-03-cover.jpg</div>
+            <img src="images/image_UI_02.png" alt="平面作品 03 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>UI與LOGO</h3><div class="meta">UI · GRAPHIC · 戰地之王/封印者</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+
+        <!-- 平面UI 04｜分類內更多作品 
+        <article class="card project-card" data-category="ui" data-featured="false"
+          data-images="images/ui-04-01.jpg,images/ui-04-02.jpg,images/ui-04-03.jpg,images/ui-04-04.jpg"
+          data-titles="【平面UI04｜圖片01標題】|【平面UI04｜圖片02標題】|【平面UI04｜圖片03標題】|【平面UI04｜圖片04標題】"
+          data-descriptions="【平面UI04｜圖片01說明：請替換這段文字】|【平面UI04｜圖片02說明：請替換這段文字】|【平面UI04｜圖片03說明：請替換這段文字】|【平面UI04｜圖片04說明：請替換這段文字】"
+          data-project-name="【平面UI04｜專案名稱】"
+          data-year="【2026】">
+          <div class="thumb">
+            <div class="image-fallback">平面UI 04 封面<br>ui-04-cover.jpg</div>
+            <img src="images/ui-04-cover.jpg" alt="平面UI 作品 04 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>平面UI 作品 04</h3><div class="meta">UI · GRAPHIC · ICON</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>-->
+
+        <!-- 3D 01｜All 精選 
+        <article class="card project-card" data-category="3d" data-featured="true"
+          data-images="images/3d-01-01.jpg,images/3d-01-02.jpg,images/3d-01-03.jpg,images/3d-01-04.jpg"
+          data-titles="【3D01｜圖片01標題】|【3D01｜圖片02標題】|【3D01｜圖片03標題】|【3D01｜圖片04標題】"
+          data-descriptions="【3D01｜圖片01說明：請替換這段文字】|【3D01｜圖片02說明：請替換這段文字】|【3D01｜圖片03說明：請替換這段文字】|【3D01｜圖片04說明：請替換這段文字】"
+          data-project-name="【3D01｜專案名稱】"
+          data-year="【2026】">
+          <div class="thumb">
+            <div class="image-fallback">3D 01 封面<br>3d-01-cover.jpg</div>
+            <img src="images/3d-01-cover.jpg" alt="3D 作品 01 封面" onerror="this.style.display='none'">
+          </div>
+          <div class="card-info">
+            <div><h3>3D 作品 01</h3><div class="meta">3D · MODELING · TEXTURE</div></div>
+            <div class="arrow">↗</div>
+          </div>
+        </article>
+        -->
+
+
+      </div>
+    </section>
+
+    
+
+    
+<!-- 
+    <section id="contact"><div class="contact"><h2>Let’s work<br>together.</h2><p>如果你正在尋找遊戲美術、角色 / 服裝設計、2D 視覺或專案合作，歡迎與我聯絡。</p><div class="contact-links"><a class="btn primary" href="mailto:yourmail@example.com">yourmail@example.com</a><a class="btn" href="#" target="_blank">ArtStation</a><a class="btn" href="#" target="_blank">Behance</a><a class="btn" href="#" target="_blank">Instagram</a></div></div></section>
+ -->
+  </main>
+  <footer><div class="container">©Chen I Ting· Portfolio</div></footer>
+
+  <!-- 這個彈窗不需要手動塞 img。
+       JavaScript 會自動讀取每個作品的 data-images；預設最多 4 張，指定 data-max-images="6" 時可顯示 6 張。 -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-gallery">
+        <div class="modal-main-image" id="modalMainImage"><div class="image-fallback" id="modalFallback">請在作品的 data-images 放入圖片路徑</div><img id="modalMainImg" src="" alt="作品大圖"></div>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal-content">
+        <div class="modal-top">
+          <div>
+            <h3 id="modalTitle">【目前圖片標題】</h3>
+          </div>
+          <button class="close" id="closeModal">×</button>
+        </div>
+
+        <div class="project-details">
+          <p id="modalDescription">【目前圖片說明：切換上方縮圖時，這段文字也會一起更換】</p>
+
+          <div class="detail-list">
+            <div class="detail-row"><span>專案名稱</span><span id="modalProjectName">【專案名稱】</span></div>
+            <div class="detail-row"><span>年份</span><span id="modalYear">【年份】</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    const workFilterNote = document.getElementById('workFilterNote');
+
+    const modal = document.getElementById('projectModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalProjectName = document.getElementById('modalProjectName');
+    const modalYear = document.getElementById('modalYear');
+    const closeModal = document.getElementById('closeModal');
+    const modalMainImg = document.getElementById('modalMainImg');
+    const modalFallback = document.getElementById('modalFallback');
+    const modalThumbs = document.getElementById('modalThumbs');
+
+    /* ===== 作品分類 =====
+       ALL：只顯示每個分類 data-featured="true" 的前 2 件精選
+       其他分類：顯示該分類全部作品
+    */
+    function applyFilter(filter) {
+      const visibleCards = [];
+
+      cards.forEach(card => {
+        const show = filter === 'all'
+          ? card.dataset.featured === 'true'
+          : card.dataset.category === filter;
+
+        card.style.display = show ? '' : 'none';
+        card.classList.remove('large', 'small');
+
+        if (show) visibleCards.push(card);
+      });
+
+      /* ===== 不規則拼裝版型 =====
+         12 欄 Grid：
+         8 + 4  → 大＋小
+         6 + 6  → 左右等寬
+         4 + 8  → 小＋大
+         8 + 4  → 大＋小
+         分類切換後會依目前可見作品重新排列。
+      */
+      const mosaicPattern = ['large', 'small', '', '', 'small', 'large', 'large', 'small'];
+
+      visibleCards.forEach((card, index) => {
+        const layoutClass = mosaicPattern[index % mosaicPattern.length];
+        if (layoutClass) card.classList.add(layoutClass);
+      });
+
+      const labels = {
+        all: '每個分類前 2 件精選作品',
+        banner: 'Banner 全部作品',
+        web: '網頁全部作品',
+        ui: '平面 UI 全部作品',
+        '3d': '3D 全部作品'
+      };
+      workFilterNote.textContent = '目前顯示：' + labels[filter];
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+
+    /* 頁面第一次開啟時，只顯示 All 精選 */
+    applyFilter('all');
+
+    /* ===== 顯示主圖片 ===== */
+    function setMainImage(src, alt) {
+      modalFallback.style.display = 'none';
+      modalMainImg.style.display = 'block';
+      modalMainImg.src = src;
+      modalMainImg.alt = alt;
+      modalMainImg.onerror = () => {
+        modalMainImg.style.display = 'none';
+        modalFallback.style.display = 'grid';
+        modalFallback.innerHTML = '找不到圖片<br>' + src;
+      };
+    }
+
+    function splitText(value) {
+      return (value || '').split('|').map(text => text.trim());
+    }
+
+    /* ===== 切圖時，同步更新標題與說明 =====
+       專案名稱、年份則使用整個作品共用資料。
+    */
+    function updateProjectContent(card, index, imageList) {
+      const titles = splitText(card.dataset.titles);
+      const descriptions = splitText(card.dataset.descriptions);
+
+      const src = imageList[index];
+      const title = titles[index] || `【圖片 ${index + 1} 標題】`;
+
+      setMainImage(src, title);
+      modalTitle.textContent = title;
+      modalDescription.textContent = descriptions[index] || `【圖片 ${index + 1} 說明：請替換】`;
+      modalProjectName.textContent = card.dataset.projectName || '【請填寫專案名稱】';
+      modalYear.textContent = card.dataset.year || '【請填寫年份】';
+    }
+
+    /* ===== 作品縮圖 =====
+       預設最多 4 張；若作品本身有 data-max-images="6"，則該作品最多顯示 6 張。
+       其他作品不受影響，縮圖切換事件維持原本邏輯。
+    */
+    function buildGallery(card) {
+      const requestedMax = Number.parseInt(card.dataset.maxImages || '4', 10);
+      const maxImages = Number.isFinite(requestedMax)
+        ? Math.min(Math.max(requestedMax, 1), 6)
+        : 4;
+
+      const imageList = (card.dataset.images || '')
+        .split(',')
+        .map(src => src.trim())
+        .filter(Boolean)
+        .slice(0, maxImages);
+
+      modalThumbs.innerHTML = '';
+
+      /* 桌機版依實際圖片數自動排成 1～6 欄；手機版仍由 CSS 維持 2 欄。 */
+      modalThumbs.style.setProperty('--thumb-columns', String(Math.max(imageList.length, 1)));
+
+      imageList.forEach((src, index) => {
+        const button = document.createElement('button');
+        button.className = 'thumb-btn' + (index === 0 ? ' active' : '');
+        button.type = 'button';
+
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `作品預覽 ${index + 1}`;
+        img.onerror = () => { img.style.display = 'none'; };
+
+        button.appendChild(img);
+        button.addEventListener('click', () => {
+          modalThumbs.querySelectorAll('.thumb-btn').forEach(t => t.classList.remove('active'));
+          button.classList.add('active');
+          updateProjectContent(card, index, imageList);
+        });
+        modalThumbs.appendChild(button);
+      });
+
+      if (imageList.length) {
+        updateProjectContent(card, 0, imageList);
+      } else {
+        modalMainImg.style.display = 'none';
+        modalFallback.style.display = 'grid';
+        modalFallback.textContent = '請先在 data-images 填入圖片路徑';
+      }
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        buildGallery(card);
+        modal.classList.add('show');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function hideModal() {
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    closeModal.addEventListener('click', hideModal);
+    modal.addEventListener('click', e => { if (e.target === modal) hideModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') hideModal(); });
+  </script>
+</body>
+</html>
